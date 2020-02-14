@@ -15663,8 +15663,10 @@ _app.PDFPrintServiceFactory.instance = {
 window.onload = function () {
   var printNode = document.getElementById('print');
   var donwNode = document.getElementById('download');
+  var documentPropertiesNode = document.getElementById('documentProperties');
   printNode.style.display="none";
   donwNode.style.display="none";
+  documentPropertiesNode.style.display="none";
   // console.log(printNode);
   // console.log(donwNode);
 }
