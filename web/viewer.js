@@ -15669,4 +15669,5 @@ window.onload = function () {
   documentPropertiesNode.style.display="none";
   // console.log(printNode);
   // console.log(donwNode);
+  console.log(documentPropertiesNode);
 }
