@@ -15659,3 +15659,10 @@ _app.PDFPrintServiceFactory.instance = {
 /***/ })
 /******/ ]);
 //# sourceMappingURL=viewer.js.map
+
+window.onload = function () {
+  var printNode = document.getElementById('print');
+  var donwNode = document.getElementById('download');
+  console.log(printNode);
+  console.log(donwNode);
+}
