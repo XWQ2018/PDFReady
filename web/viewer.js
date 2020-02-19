@@ -15663,9 +15663,13 @@ _app.PDFPrintServiceFactory.instance = {
 window.onload = function () {
   var printNode = document.getElementById('print');
   var donwNode = document.getElementById('download');
+  var secondaryPrintNode = document.getElementById('secondaryPrint');
+  var secondaryDownloadNode = document.getElementById('secondaryDownload');
   var documentPropertiesNode = document.getElementById('documentProperties');
   printNode.style.display="none";
   donwNode.style.display="none";
+  secondaryPrintNode.style.display="none";
+  secondaryDownloadNode.style.display="none";
   documentPropertiesNode.style.display="none";
   // console.log(printNode);
   // console.log(donwNode);
