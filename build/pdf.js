@@ -9829,7 +9829,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-var DEFAULT_RANGE_CHUNK_SIZE = 65536;
+var DEFAULT_RANGE_CHUNK_SIZE = 524288;
 var isWorkerDisabled = false;
 var fallbackWorkerSrc;
 var fakeWorkerFilesLoader = null;
@@ -22631,7 +22631,7 @@ function parseUrl(sourceUrl) {
   if (parsedUrl.protocol === 'file:' || parsedUrl.host) {
     return parsedUrl;
   }
-
+  console.log('logurl==',sourceUrl);
   if (/^[a-z]:[/\\]/i.test(sourceUrl)) {
     return url.parse("file:///".concat(sourceUrl));
   }
